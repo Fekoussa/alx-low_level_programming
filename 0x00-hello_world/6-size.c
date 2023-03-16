@@ -2,12 +2,9 @@
 
 /**
 *main Entry point
-*
 *Descriptin : using sizeof to print the size of various types.
-*
 *Return: Always 0 (success)
 */
-
 int main(void)
 {
 char charType;
