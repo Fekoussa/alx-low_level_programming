@@ -1,20 +1,22 @@
 #include "main.h"
+
 /**
- * print_diagsums - entry point
- * @a: input
- * @size: innput
- * Return: 0
+ * print_chessboard - prints the chessboard
+ * @a: pointer to pieces to print
+ *
+ * Return: void
  */
-void print_diagsums(int *a, int size)
+void print_chessboard(char (*a)[8])
 {
-	int sum1, sum2, y;
+	int i, j;
 
-	sum1 = 0;
-	sum2 = 0;
-
-	for (y = 0; y < size; y++)
-		sum1 = sum1 + a[y * size + y];
-	for (y = size - 1; y >= 0; y--)
-		sum2 += a[y * size + (size - y - 1)];
-	printf("%d, %d\n", sum1, sum2);
+	for (i = 0; i < 8; i++)
+	{
+		for (j = 0; j < 8; j++)
+		{
+			_putchar(a[i][j]);
+		}
+		_putchar('\n');
+	}
 }
+
